@@ -3,56 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XCalculator - Hesap Silme Talebi</title>
+    <title>XCalculator - Account Deletion / Hesap Silme Talebi</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f9f9f9; }
-        .card { background: white; padding: 40px; border-radius: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-        h1 { color: #f97316; margin-top: 0; }
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        .steps { background: #fff7ed; padding: 20px; border-radius: 16px; border-left: 4px solid #f97316; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        .footer { margin-top: 50px; text-align: center; color: #888; font-size: 14px; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: #f3f4f6; 
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+        .header h1 {
+            color: #f97316;
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+        .header p {
+            color: #666;
+            margin: 0;
+            font-size: 14px;
+        }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 24px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03); 
+        }
+        h2 { 
+            color: #1e293b; 
+            border-bottom: 2px solid #f1f5f9; 
+            padding-bottom: 10px; 
+            margin-top: 30px; 
+            font-size: 20px;
+        }
+        p, li { 
+            color: #475569; 
+            font-size: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #1e293b;
+        }
+        .steps {
+            background: #fff7ed;
+            padding: 20px;
+            border-radius: 16px;
+            border-left: 4px solid #f97316;
+            margin: 15px 0;
+        }
+        .footer { 
+            margin-top: 50px; 
+            text-align: center; 
+            color: #64748b; 
+            font-size: 13px; 
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .footer a {
+            color: #f97316;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>XCalculator Hesap Silme Talebi</h1>
-        <p>Google Play politikaları gereği, XCalculator kullanıcıları hesaplarını ve hesaplarıyla ilişkili tüm verileri istedikleri zaman silme hakkına sahiptir.</p>
+    <div class="header">
+        <h1>XCalculator</h1>
+        <p><strong>Account Deletion & Data Erasure</strong> | <strong>Hesap ve Veri Silme Talebi</strong></p>
+        <p style="margin-top: 8px; color: #94a3b8;">Compliant with Google Play Data Safety policy / Google Play Veri Güvenliği politikalarıyla uyumludur</p>
+    </div>
 
-        <h2>Hesabımı Nasıl Silerim?</h2>
-        <div class="steps">
-            <ol>
-                <li>XCalculator uygulamasını açın.</li>
-                <li>Ana ekrandaki <strong>Ayarlar</strong> (dişli çark) simgesine dokunun.</li>
-                <li>Sayfanın altındaki <strong>Tehlikeli Alan</strong> bölümüne gidin.</li>
-                <li><strong>Hesabımı Sil</strong> butonuna tıklayın.</li>
-                <li>Onay kutusunda <strong>Evet, Tamamen Sil</strong> seçeneğini işaretleyerek işlemi tamamlayın.</li>
-            </ol>
+    <div class="container">
+        <!-- ENGLISH ACCOUNT DELETION -->
+        <div class="card">
+            <h2 style="color: #f97316; margin-top: 0; border-bottom: 2px solid #fed7aa;">English Version</h2>
+            <p>In compliance with Google Play Store user data policies, all XCalculator users have the fundamental right to delete their accounts and all associated cloud credentials at any time.</p>
+
+            <h2>How to Delete Your Account?</h2>
+            <div class="steps">
+                <ol>
+                    <li>Open the <strong>XCalculator</strong> mobile application.</li>
+                    <li>Tap on the <strong>Settings</strong> cog icon (⚙️) on the dashboard screen.</li>
+                    <li>Scroll down to the bottom section labeled <strong>Danger Zone</strong>.</li>
+                    <li>Click on the <strong>Delete Account</strong> option.</li>
+                    <li>Check the checkbox <strong>"Yes, Delete Permanently"</strong> and confirm to complete.</li>
+                </ol>
+            </div>
+
+            <h2>How to Erase Your Calculation History?</h2>
+            <p><strong>Calculation History is stored strictly locally on your own device.</strong> We never upload your calculation logs to our servers, so there is no trace of your history on the cloud. You have full local control:</p>
+            <ul>
+                <li>Navigate to the <strong>History</strong> tab inside the mobile application and tap the clear-all icon or delete entries individually.</li>
+                <li>Simply uninstalling or choosing "Clear Data" for XCalculator from your device's application manager will instantly and permanently erase all calculation records and custom local configurations.</li>
+            </ul>
+
+            <h2>What Data Is Permanently Erased From Servers?</h2>
+            <p>When you delete your account, the following data points are <strong>permanently and irreversibly</strong> destroyed on our servers:</p>
+            <ul>
+                <li><strong>Profile Details:</strong> Account unique ID, Google verified email, and profile name.</li>
+                <li><strong>Cloud Configs:</strong> Any synchronized preferences or settings (theme, precision, default unit choices).</li>
+            </ul>
+
+            <h2>Retention & Deletion Timeline</h2>
+            <p>Upon clicking confirm, your cloud profile is taken offline immediately. Complete database purging and backup disposal takes place within <strong>30 days max</strong>. No trailing user information remains. If you cannot access the app, email <strong>ferhatyalin@gmail.com</strong> for swift assistance.</p>
         </div>
 
-        <h2>Hesabı Silmeden Verilerimi Nasıl Silerim?</h2>
-        <p>Hesabınızı tamamen silmek istemiyor ancak sadece belirli verilerinizin (örneğin hesaplama geçmişiniz) silinmesini istiyorsanız:</p>
-        <ul>
-            <li>Uygulama içindeki <strong>Geçmiş</strong> sekmesine giderek kayıtları tek tek veya topluca silebilirsiniz.</li>
-            <li>Destek ekibimize <strong>ferhatyalin@gmail.com</strong> adresinden e-posta göndererek belirli verilerinizin silinmesini talep edebilirsiniz. Talebiniz 48 saat içinde işleme alınacaktır.</li>
-        </ul>
+        <!-- TURKISH ACCOUNT DELETION -->
+        <div class="card">
+            <h2 style="color: #f97316; margin-top: 0; border-bottom: 2px solid #fed7aa;">Türkçe Versiyon</h2>
+            <p>Google Play Store kullanıcı verileri politikaları uyarınca, XCalculator kullanıcıları istedikleri zaman hesaplarını ve hesaplarıyla ilişkili tüm bulut verilerini kalıcı olarak silme hakkına sahiptir.</p>
 
-        <h2>Hangi Veriler Silinir?</h2>
-        <p>Hesap silme işlemi onaylandığında aşağıdaki veriler sunucularımızdan <strong>kalıcı olarak</strong> silinir:</p>
-        <ul>
-            <li><strong>Profil Bilgileri:</strong> E-posta adresiniz ve kullanıcı kimliğiniz.</li>
-            <li><strong>Hesap Ayarları:</strong> Tema tercihleri, hassasiyet ayarları ve birim tercihleri.</li>
-            <li><strong>İşlem Geçmişi:</strong> Uygulama üzerinde yaptığınız tüm hesaplama kayıtları ve formül geçmişi.</li>
-        </ul>
+            <h2>Hesabımı Nasıl Silerim?</h2>
+            <div class="steps">
+                <ol>
+                    <li><strong>XCalculator</strong> uygulamasını mobil cihazınızda açın.</li>
+                    <li>Ana ekranın üst kısmındaki <strong>Ayarlar</strong> simgesine (dişli çark - ⚙️) dokunun.</li>
+                    <li>Sayfanın altındaki <strong>Tehlikeli Alan / Danger Zone</strong> bölümüne gidin.</li>
+                    <li><strong>Hesabımı Sil / Delete Account</strong> butonuna tıklayın.</li>
+                    <li>Açılan onay kutusunda <strong>"Evet, Tamamen Sil"</strong> seçeneğini işaretleyip onaylayarak işlemi tamamlayın.</li>
+                </ol>
+            </div>
 
-        <h2>Veri Saklama Politikası</h2>
-        <p>Silme işlemi gerçekleştikten sonra verileriniz geri döndürülemez şekilde sistemden kaldırılır. Herhangi bir ek saklama süresi uygulanmaz. Yasal yükümlülükler haricinde hiçbir veriniz silme işleminden sonra tutulmaz.</p>
-        
-        <p>Hesabınıza erişemiyorsanız veya teknik bir sorun yaşıyorsanız, hesap silme talebi için <strong>ferhatyalin@gmail.com</strong> adresinden bizimle iletişime geçebilirsiniz.</p>
+            <h2>Hesaplama Geçmişimi Nasıl Silerim?</h2>
+            <p><strong>Hesaplama geçmişiniz tamamen ve sadece yerel olarak kendi cihazınızda saklanmaktadır.</strong> Bu kayıtları sunucularımıza yüklemediğimiz için bulutta herhangi bir geçmiş veriniz bulunmaz. Geçmişinizi dilediğiniz gibi kontrol edebilirsiniz:</p>
+            <ul>
+                <li>Uygulama içindeki <strong>Geçmiş</strong> sekmesinden kayıtlarınızı tek tek silebilir veya tümünü temizle simgesini kullanabilirsiniz.</li>
+                <li>Uygulamayı mobil cihazınızdan kaldırmak (veya cihaz ayarlarından Uygulama Verilerini Temizlemek) cihazdaki tüm hesap geçmişi kayıtlarını ve yerel yapılandırmaları kalıcı olarak anında siler.</li>
+            </ul>
+
+            <h2>Sunucularımızdan Hangi Veriler Tamamen Silinir?</h2>
+            <p>Hesap silme işlemi onaylandığında, aşağıdaki tüm verileriniz sunucularımızdan <strong>kalıcı ve geri döndürülemez şekilde</strong> kaldırılır:</p>
+            <ul>
+                <li><strong>Profil Bilgileri:</strong> E-posta adresiniz, adınız ve Google kullanıcı kimliğiniz.</li>
+                <li><strong>Bulut Tercihleri:</strong> Senkronize edilmiş tema, basamak hassasiyeti ve varsayılan birim/para birimi tercihleriniz.</li>
+            </ul>
+
+            <h2>Veri Saklama ve Silme Süreleri</h2>
+            <p>Silme işlemini başlattığınız anda verileriniz anında çevrimdışı hale getirilir. Veritabanımızdan ve tüm yedeklerimizden tamamen arındırılması <strong>en fazla 30 gün</strong> sürer. Bu sürenin ardından hiçbir veri kalıntısı tutulmaz. Uygulamaya erişemiyorsanız, manuel silme için <strong>ferhatyalin@gmail.com</strong> adresinden bize yazabilirsiniz.</p>
+        </div>
     </div>
+
     <div class="footer">
-        &copy; 2026 XCalculator. Tüm hakları saklıdır.
+        <p>&copy; 2026 XCalculator (com.fyapps.xcalculator). Tüm Hakları Saklıdır / All Rights Reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy / Gizlilik Politikası</a> | 
+            <a href="delete-account.html">Delete Account / Hesap Silme</a>
+        </p>
     </div>
 </body>
 </html>

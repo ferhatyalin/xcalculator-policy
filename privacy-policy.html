@@ -3,57 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XCalculator - Gizlilik Politikası</title>
+    <title>XCalculator - Privacy Policy & Data Retention / Gizlilik ve Veri Saklama Politikası</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f9f9f9; }
-        .card { background: white; padding: 40px; border-radius: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-        h1 { color: #f97316; margin-top: 0; }
-        h2 { color: #444; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        p, li { color: #555; }
-        .footer { margin-top: 50px; text-align: center; color: #888; font-size: 14px; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: #f3f4f6; 
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+        .header h1 {
+            color: #f97316;
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+        .header p {
+            color: #666;
+            margin: 0;
+            font-size: 14px;
+        }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 24px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03); 
+        }
+        h2 { 
+            color: #1e293b; 
+            border-bottom: 2px solid #f1f5f9; 
+            padding-bottom: 10px; 
+            margin-top: 30px; 
+            font-size: 20px;
+        }
+        p, li { 
+            color: #475569; 
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #1e293b;
+        }
+        .highlight {
+            background-color: #ffedd5;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid #f97316;
+            margin: 20px 0;
+        }
+        .footer { 
+            margin-top: 50px; 
+            text-align: center; 
+            color: #64748b; 
+            font-size: 13px; 
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .footer a {
+            color: #f97316;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Gizlilik Politikası</h1>
-        <p>Son Güncelleme: 10 Mayıs 2026</p>
-        
-        <p>XCalculator ("biz", "uygulama"), kullanıcılarının gizliliğine saygı duyar. Bu Gizlilik Politikası, <strong>com.fyapps.xcalculator</strong> paket kimlikli mobil uygulamamızın verileri nasıl topladığını, kullandığını ve koruduğunu açıklar.</p>
-
-        <h2>1. Toplanan Veriler</h2>
-        <p>Uygulamamızı kullandığınızda aşağıdaki veri türleri toplanabilir:</p>
-        <ul>
-            <li><strong>Kişisel Bilgiler:</strong> Google ile Giriş yapıldığında e-posta adresiniz ve kullanıcı kimliğiniz (Hesap yönetimi için).</li>
-            <li><strong>Uygulama Etkinliği:</strong> Hesaplama geçmişiniz, favori denklemleriniz ve uygulama ayarlarınız (Uygulama işlevselliği için).</li>
-            <li><strong>Cihaz Tanımlayıcıları:</strong> Google AdMob tarafından reklam sunumu ve analiz amacıyla toplanan reklam kimlikleri (AdID).</li>
-        </ul>
-
-        <h2>2. Verilerin Kullanım Amacı</h2>
-        <p>Toplanan veriler şu amaçlarla kullanılır:</p>
-        <ul>
-            <li>Uygulama işlevselliğinin sağlanması (Hesaplamaların senkronize edilmesi).</li>
-            <li>Uygulama analizi ve performans geliştirme.</li>
-            <li>Kişiselleştirilmiş veya genel reklamların sunulması (Google AdMob).</li>
-            <li>Sahtekarlığın önlenmesi ve güvenlik.</li>
-        </ul>
-
-        <h2>3. Veri Paylaşımı</h2>
-        <p>Verileriniz üçüncü taraf hizmet sağlayıcılarla (Google Firebase ve Google AdMob) yalnızca yukarıda belirtilen amaçlar doğrultusunda paylaşılır. Verileriniz asla üçüncü taraflara satılmaz.</p>
-
-        <h2>4. Veri Güvenliği ve Şifreleme</h2>
-        <p>Tüm kullanıcı verileri cihazınız ile sunucularımız arasında endüstri standardı olan HTTPS/TLS protokolleri kullanılarak <strong>şifrelenmiş</strong> bir şekilde aktarılır.</p>
-
-        <h2>5. Kullanıcı Hakları ve Veri Silme</h2>
-        <p>Kullanıcılar, uygulama içindeki "Ayarlar" menüsünden tüm hesaplarını ve verilerini kalıcı olarak silebilirler. Ayrıca veri silme talepleri için <a href="/delete-account.html">Veri Silme Sayfamızı</a> ziyaret edebilir veya ferhatyalin@gmail.com adresinden bizimle iletişime geçebilirsiniz.</p>
-
-        <h2>6. Çocukların Gizliliği</h2>
-        <p>Uygulama, 13 yaşın altındaki çocuklardan bilerek veri toplamaz. Eğer bir çocuğun bize veri aktardığını fark ederseniz, lütfen derhal bizimle iletişime geçin.</p>
-
-        <h2>7. İletişim</h2>
-        <p>Bu politika hakkında sorularınız için bize ulaşın: <strong>ferhatyalin@gmail.com</strong></p>
+    <div class="header">
+        <h1>XCalculator</h1>
+        <p><strong>Privacy Policy & Data Retention</strong> | <strong>Gizlilik ve Veri Saklama Politikası</strong></p>
+        <p style="margin-top: 8px; color: #94a3b8;">Last Updated / Son Güncelleme: 18 June 2026</p>
     </div>
+
+    <div class="container">
+        <!-- ENGLISH PRIVACY POLICY -->
+        <div class="card">
+            <h2 style="color: #f97316; margin-top: 0; border-bottom: 2px solid #fed7aa;">English Version</h2>
+            <p>XCalculator ("we", "the app") respects your privacy. This Privacy Policy describes how we collect, use, retain, and protect your data within our mobile app with package name <strong>com.fyapps.xcalculator</strong>.</p>
+
+            <h2>1. Data We Collect</h2>
+            <p>When you use our application, we may collect the following types of information:</p>
+            <ul>
+                <li><strong>Personal Account Info:</strong> If you choose to sign in with Google, we collect your email address and unique user ID to securely manage your account and synchronize app preferences.</li>
+                <li><strong>App Preferences:</strong> Your selected settings, currency options, decimal precision, and favorite preferences.</li>
+                <li><strong>Device Identifiers:</strong> Advertising identifiers (AdID / IDFA) collected by Google AdMob solely for serving non-intrusive generic ads and resolving performance analytics.</li>
+            </ul>
+
+            <div class="highlight" style="background-color: #eff6ff; border-left-color: #3b82f6;">
+                <strong>Crucial Note on Calculation History:</strong>
+                <p><strong>We DO NOT collect or sync your calculation history to the cloud.</strong> All calculation inputs, histories, lists, and custom formula creations are stored <strong>strictly locally</strong> on your own device. This data is never sent to, processed by, or saved on our cloud servers.</p>
+            </div>
+
+            <h2>2. Purpose of Data Processing</h2>
+            <p>Your data is processed for the following purposes:</p>
+            <ul>
+                <li>To maintain your cloud-saved preferences and display settings across your signed-in devices.</li>
+                <li>To provide, secure, and maintain core calculator application settings.</li>
+                <li>To serve non-intrusive advertisements utilizing Google AdMob.</li>
+                <li>To prevent fraud and maintain network and app terminal security.</li>
+            </ul>
+
+            <h2>3. Core Data Retention & Deletion Policy</h2>
+            <div class="highlight">
+                <strong>How Long and Where We Keep Your Data:</strong>
+                <ul>
+                    <li><strong>Active Registered Accounts:</strong> Your basic profile credentials and app preferences are securely stored on Google Firebase servers as long as your user account remains active.</li>
+                    <li><strong>Data Erasure Policy:</strong> When you delete your account (via the app settings or our deletion console) or request manual deletion, <strong>your profile information and cloud settings are permanently and irreversibly removed from our active databases and backup systems within exactly 30 days</strong>.</li>
+                    <li><strong>Calculation History Storage:</strong> Since calculation logs are stored 100% locally on your device, you have instant control. You can clear them anytime inside the app's History screen. Deleting the app from your device also instantly and permanently wipes all local calculation records.</li>
+                </ul>
+            </div>
+
+            <h2>4. Data Sharing & Transmission</h2>
+            <p>We do not sell, rent, or trade your personal data. We only share processed preferences or analytics information with trusted third-party providers (Google Firebase and Google AdMob/AdSense) strictly for providing backend services, analytical reporting, and serving advertisements as authorized by this policy.</p>
+
+            <h2>5. Data Security</h2>
+            <p>We implement rigid security standards. All network transmissions of user credentials/preferences are fully <strong>encrypted</strong> using industry-standard HTTPS and Secure Sockets Layer (SSL) / TLS 1.3 protocols to prevent unauthorized interception.</p>
+
+            <h2>6. Your Rights & Account Deletion Link</h2>
+            <p>You have full ownership of your data. You can terminate your profile instantly inside the app Settings. Alternatively, you can request full erasure of your account details on our <a href="delete-account.html">Account Deletion Page</a> or email your request to <strong>ferhatyalin@gmail.com</strong>.</p>
+
+            <h2>7. Contact</h2>
+            <p>For any questions regarding your data privacy or retention practices, contact us at: <strong>ferhatyalin@gmail.com</strong></p>
+        </div>
+
+        <!-- TURKISH PRIVACY POLICY -->
+        <div class="card">
+            <h2 style="color: #f97316; margin-top: 0; border-bottom: 2px solid #fed7aa;">Türkçe Versiyon</h2>
+            <p>XCalculator ("biz", "uygulama") gizliliğinize saygı duyar. Bu Gizlilik Politikası, <strong>com.fyapps.xcalculator</strong> paket kimlikli mobil uygulamamızın verileri nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklar.</p>
+
+            <h2>1. Toplanan Veriler</h2>
+            <p>Uygulamamızı kullandığınızda aşağıdaki veri türleri toplanabilir:</p>
+            <ul>
+                <li><strong>Kişisel Hesap Bilgileri:</strong> Google ile Giriş yapıldığında, hesap yönetimi ve güvenli hesap ayarları senkronizasyonu için e-posta adresiniz ve benzersiz hesap kimliğiniz.</li>
+                <li><strong>Uygulama Tercihleri:</strong> Tema ayarlarınız, varsayılan birimleriniz ve hesaplama hassasiyeti tercihleriniz.</li>
+                <li><strong>Cihaz Tanımlayıcıları:</strong> Google AdMob tarafından reklam sunumu ve performans analizleri amacıyla toplanan reklam kimlikleri (AdID / IDFA).</li>
+            </ul>
+
+            <div class="highlight" style="background-color: #eff6ff; border-left-color: #3b82f6;">
+                <strong>Hesaplama Geçmişi Hakkında Önemli Not:</strong>
+                <p><strong>Hesaplama geçmişinizi kesinlikle buluta yüklemiyoruz veya yedeklemiyoruz.</strong> Tüm hesaplama girdileri, geçmiş kayıtları ve özel oluşturduğunuz formüller <strong>tamamen ve yalnızca yerel olarak</strong> cihazınızda saklanır. Bu veriler hiçbir şekilde bulut sunucularımıza gönderilmez, orada tutulmaz veya senkronize edilmez.</p>
+            </div>
+
+            <h2>2. Verilerin Kullanım Amacı</h2>
+            <p>Toplanan veriler aşağıdaki amaçlar doğrultusunda işlenmektedir:</p>
+            <ul>
+                <li>Giriş yaptığınız tüm cihazlarınızda uygulama teması ve tercihlerinizi senkronize etmek.</li>
+                <li>Uygulama işlevlerini ve kişisel ayarları sürdürmek.</li>
+                <li>Google AdMob aracılığıyla kişiselleştirilmiş veya genel reklamlar sunmak.</li>
+                <li>Uygulama ve ağ güvenliğini sağlamak, usulsüz kullanımları önlemek.</li>
+            </ul>
+
+            <h2>3. Veri Saklama ve Silme Politikası</h2>
+            <div class="highlight">
+                <strong>Verilerinizi Ne Kadar Süre ve Nasıl Saklıyoruz:</strong>
+                <ul>
+                    <li><strong>Aktif Kayıtlı Hesaplar:</strong> Temel profil bilgileriniz ve tercih ayarlarınız, kullanıcı hesabınız aktif kaldığı sürece güvenli Google Firebase sunucularında saklanır.</li>
+                    <li><strong>Veri Silme Taahhüdü:</strong> Hesabınızı sildiğinizde (uygulama ayarlarından veya silme sayfasından) ya da veri silme talebinde bulunduğunuzda, <strong>hesabınızla ilişkili e-posta, kimlik bilgileri ve bulut tercihleri 30 gün içinde sunucularımızdan ve yedekleme sistemlerimizden kalıcı ve geri döndürülemez şekilde tamamen silinir</strong>.</li>
+                    <li><strong>Hesaplama Geçmişi Saklama Durumu:</strong> Hesaplama geçmişiniz %100 yerel olarak cihazınızda tutulduğundan, geçmişi uygulama içinden anında temizleyebilirsiniz. Uygulamayı cihazınızdan kaldırmak da tüm geçmiş kayıtlarını kalıcı ve anında siler.</li>
+                </ul>
+            </div>
+
+            <h2>4. Veri Paylaşımı ve Aktarımı</h2>
+            <p>Verilerinizi satmayız, kiralamayız veya ticaretini yapmayız. Toplanan tercih veya analitik verileri, yalnızca altyapı hizmeti sağlamak ve reklam sunumu amacıyla güvenilir üçüncü taraflarla (Google Firebase ve Google AdMob) bu politikada belirtilen sınırlar dahilinde paylaşılır.</p>
+
+            <h2>5. Veri Güvenliği</h2>
+            <p>Uygulamada veri güvenliği standarttır. Cihazınız ile sunucularımız arasındaki tüm veri alışverişleri (hesap tercihleri vb.), TLS 1.3 / HTTPS protokolleri kullanılarak uçtan uca <strong>şifrelenmektedir</strong>.</p>
+
+            <h2>6. Kullanıcı Hakları ve Hesap Silme Linki</h2>
+            <p>Verileriniz üzerinde tam kontrol sahibisiniz. İstediğiniz zaman uygulama içindeki Ayarlar bölümünden hesabınızı silebilirsiniz. Ayrıca web sitemizdeki <a href="delete-account.html">Hesap Silme Sayfası</a> aracılığıyla veya <strong>ferhatyalin@gmail.com</strong> adresine yazarak tam silme talep edebilirsiniz.</p>
+
+            <h2>7. İletişim</h2>
+            <p>Gizlilik ve veri saklama uygulamalarımıza yönelik tüm sorularınız için bizimle iletişime geçin: <strong>ferhatyalin@gmail.com</strong></p>
+        </div>
+    </div>
+
     <div class="footer">
-        &copy; 2026 XCalculator (com.fyapps.xcalculator). Tüm hakları saklıdır.
+        <p>&copy; 2026 XCalculator (com.fyapps.xcalculator). Tüm Hakları Saklıdır / All Rights Reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy / Gizlilik Politikası</a> | 
+            <a href="delete-account.html">Delete Account / Hesap Silme</a>
+        </p>
     </div>
 </body>
 </html>
